@@ -30,8 +30,10 @@ export default function ChatPage() {
   }, [input]);
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-slate-100 to-blue-200 p-4">
-      <div className="mx-auto w-[92%] sm:w-[85%] md:w-[500px] bg-white/80 backdrop-blur-md shadow-2xl rounded-3xl flex flex-col overflow-hidden border border-gray-300 transition-all duration-300">
+    // <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-slate-100 to-blue-200 p-4">
+    <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-purple-200 via-indigo-200 to-pink-100 p-4">
+
+      <div className="mx-auto w-[92%] sm:w-[85%] md:w-[700px]  lg:w-[800px] bg-white/80 backdrop-blur-md shadow-2xl rounded-3xl flex flex-col overflow-hidden border border-gray-300 transition-all duration-300">
         <div className="flex-1 min-h-[60vh] overflow-y-auto p-4 space-y-4">
           {messages.map((m, i) => (
             <motion.div
@@ -91,7 +93,7 @@ export default function ChatPage() {
             disabled={isLoading}
             className="bg-blue-500 text-white px-5 py-2 rounded-full hover:bg-blue-600 transition-all duration-200 disabled:opacity-50"
           >
-            Enviar
+          ➤
           </button>
         </form>
       </div>
