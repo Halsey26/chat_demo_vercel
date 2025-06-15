@@ -32,9 +32,15 @@ export default function ChatPage() {
   return (
     // <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-slate-100 to-blue-200 p-4">
     <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-purple-200 via-indigo-200 to-pink-100 p-4">
-
+      {/* <img src="/Warmikuna_f.png" alt="Logo" className="h-10 w-auto" /> */}
       <div className="mx-auto w-[92%] sm:w-[85%] md:w-[700px]  lg:w-[800px] bg-white/80 backdrop-blur-md shadow-2xl rounded-3xl flex flex-col overflow-hidden border border-gray-300 transition-all duration-300">
-        <div className="flex-1 min-h-[60vh] overflow-y-auto p-4 space-y-4">
+
+        <div className="flex items-center justify-center border-b border-gray-300 bg-white/60 py-4 px-6">
+          <img src="/Warmikuna_f.png" alt="Logo" className="h-24 w-auto object-contain" />
+        </div>
+
+        <div className="h-[400px] overflow-y-auto p-4 space-y-4 scroll-smooth">
+
           {messages.map((m, i) => (
             <motion.div
               key={i}
@@ -69,7 +75,7 @@ export default function ChatPage() {
               transition={{ duration: 0.3 }}
               className="text-sm text-gray-500 italic px-3 animate-pulse text-center"
             >
-              El asistente está escribiendo...
+              Escribiendo...
             </motion.div>
           )}
 
